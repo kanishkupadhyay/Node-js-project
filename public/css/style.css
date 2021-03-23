@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgb(2 5 161 / 91%);
+}
+.nav-link a:hover{
+    color: #1acc8d;
+}
+.img-div {
+    animation: MoveUpDown 2s linear infinite;
+
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      margin-bottom: 0;
+    }
+    50% {
+      margin-bottom: 100px;
+    }
+  }
+.kanishk-nav span{
+    font-size: 28px;
+    color: #fff;
+}
+.kanishk-nav {
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.nav-link{
+    margin-top: 20px;
+}
+.nav-link a{
+    margin: 0px 10px;
+    text-decoration: none;
+    font-weight:bold;
+    color: #fff;
+}
+
+/* index */
+
+.main-index{
+    background: rgb(2 5 161 / 91%);
+}
+.icon::before {
+    margin-right: 33px;
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height: 35rem;
+}
+.container h1{
+    margin: 0 0 20px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.container p{
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.img-div img{
+    height: 400px;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both
+}
+.btn-div button{
+    margin-bottom: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+    background: #1acc8d;
+    font-weight: 500;
+    font-size: 16px;
+    border: 2px solid #1acc8d;
+    cursor: pointer;
+    outline: none;
+}
+@media(max-width:1120px){
+    .img-div img{
+        height: 300px;
+    }
+    .container h1{
+        font-size: 40px;
+    }
+    .container p{
+        font-size: 16px;
+    }
+}
+@media(max-width:854px){
+    
+    .container h1{
+        font-size: 35px;
+    }
+    .container p{
+        font-size: 13px;
+    }
+}
+@media(max-width:742px){
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .img-div{animation: none;}
+}
+@media(max-width:512px){
+    .img-div img{
+        height: 250px;
+    }
+    .container h1{
+        display: flex;
+        justify-content: center;
+    }
+    .btn-div{
+        display: flex;
+        justify-content: center;
+    }
+    .container p{
+        font-size: 20px;
+    }
+    .nav-link a{
+        display: none;
+    }
+    .icon::before{
+        display: block;
+    }
+}
+
+/* side nav */
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  #mySidenav{
+      background: #fff;
+  }
+#mySidenav a{
+color: blue;
+}
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  @media(max-width:448px){
+      .container h1{
+          font-size: 31px;
+      }
+      .container p{
+          font-size: 19px;
+      }
+  }
+  @media(max-width:388px){
+    .container h1{
+        font-size: 28px;
+    }
+  }
+  @media(max-width:348px){
+    .container h1{
+        font-size: 26px;
+    }
+    .kanishk-nav span{
+        font-size: 26px;
+    }
+  }
+  @media(max-width:324px){
+    .container h1{
+        font-size: 24px;
+    }
+    .container p{
+        font-size: 18px;
+    }
+    .kanishk-nav{
+        margin-left: 10px;
+    }
+}

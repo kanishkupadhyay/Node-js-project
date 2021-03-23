@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main-nav">
+        <div class="kanishk-nav">
+            <span>KanishkUpadhyay</span>
+        </div>
+        <div class="nav-link">
+            <a href="/">Home</a>
+            <a href="/users">Users</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            
+            <i onclick="openNav()" class="fa fa-bars icon" style="font-size:36px;color:rgb(255, 255, 255);"></i>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="side-link" href="/">Home</a>
+  <a class="side-link" href="/users">Users</a>
+  <a class="side-link" href="/login">Login</a>
+ <a class="side-link" href="/register">Register</a>
+</div>
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+<script>
+    /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>

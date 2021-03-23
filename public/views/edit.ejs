@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://kanishk-upadhyay-express-covid.herokuapp.com/images/kanishk.jpg"/>
+</head>
+<style>
+    .imgs{
+        height: 380px  !important;
+    }
+    input{
+        margin: 20px 0px;
+    }
+</style>
+<body>
+    <!-- Navbar -->
+    <%- include ('partials/navbar') %>
+    <!--  -->
+    <div class="containerss">
+        <div class="mainss">
+            <div class="imgs-div">
+                <img class="imgs" src="../images/details-2.png" alt="Error loading image" srcset="">
+            </div>
+    <form class="reg-inp" method="POST" action="/update">
+        <h1 class="reg-txt">Edit <%=data.name%>'s data</h1>
+        <input style="display: none;" placeholder="Enter Your Name"value="<%=data.id%>" name="id" type="text">
+       <input placeholder="Enter Your Name"value="<%=data.name%>" name="name" type="text">
+       <input name="email" placeholder="Enter Your Email" type="email" value="<%=data.email%>">
+       <input value="<%=data.password%>" name="password" placeholder="Enter Your Password" type="password">
+       <input value="<%=data.cpassword%>" name="cpassword" type="password" placeholder="Confirm Password" >
+         <div class="sign-up">
+        <button>Update</button>
+    </div>
+    </form>
+</div>
+</div>
+    <!-- Footer -->
+    <%-include('partials/footer')%>
+    <!--  -->
+</body>
+</html>

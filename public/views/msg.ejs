@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/jpg" href="https://kanishk-upadhyay-express-covid.herokuapp.com/images/kanishk.jpg"/>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    body{
+        background: rgb(2 5 161 / 91%);
+    }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+h1{
+    color: #fff;
+}
+.btn{
+margin-top: 20px;
+}
+button{
+ background: #1acc8d;
+  padding: 10px 30px;
+  border: 1px solid #1acc8d;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  box-shadow: 0 50px #1acc8d inset;
+  color: #fff;
+  border-radius: 15px;
+  outline: none;
+}
+button:hover{
+  box-shadow: 0 0 #ff4081 inset;
+  color: #ff4081;
+}
+</style>
+<body>
+    <%- include ('partials/navbar') %>
+    <div class="main">
+        <div>
+            <h1>Your account has been created successfully</h1>
+        </div>
+        <div class="btn">
+          <a href="/login"><button>Login</button></a>
+        </div>
+    </div>
+    <%- include ('partials/footer') %>
+</body>
+</html>

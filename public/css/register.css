@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.containerss{
+    display: flex;
+    justify-content: center;
+    background: rgb(2 5 161 / 91%);
+    height: 100%;
+}
+.mainss{
+    display: flex;
+    background: rgb(255, 255, 255) !important;
+    width: 950px;
+    height: 500px;
+    margin: 52px auto;
+    justify-content:space-evenly;
+    box-shadow: 3px 3px 10px -3px black;
+    margin-bottom: 66px;
+    border-radius: 35px;
+}
+.sign-up{
+    margin-top: 30px;
+}
+.imgs-div{
+    margin-top: 51px;
+}
+.imgs-div img{
+    max-width: 100%;
+    height: auto;
+}
+.reg-inp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reg-txt{
+    line-height: 1.66;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #222 !important;
+    font-family: Poppins;
+    margin-top: 33px;
+    font-size: 36px;
+}
+.reg-inp{
+    margin-top: 30px;
+    
+}
+.reg-inp input{
+    width: 100%;
+    
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 30px;
+    font-family: Poppins;
+    box-sizing: border-box;
+    outline: none;
+}
+.sign-up button{
+    background: #1acc8d;
+     padding: 10px 30px;
+     border: 1px solid #1acc8d;
+     cursor: pointer;
+     transition: 0.3s;
+     font-size: 16px;
+     box-shadow: 0 50px #1acc8d inset;
+     color: #fff;
+     border-radius: 15px;
+     outline: none;
+   }
+  .sign-up button:hover{
+     box-shadow: 0 0 #ff4081 inset;
+     color: #ff4081;
+   }
+.fa-user-o::before{
+    position: relative;
+    top: 40%;
+    font-size: 20px;
+   
+}
+.fa-credit-card::before{
+    position: relative;
+    top: 40%;
+    font-size: 20px;
+}
+.fa-lock::before{
+    position: relative;
+    top: 40%;
+    font-size: 20px;
+}
+@media(max-width:994px){
+    .mainss{
+        width: 770px;
+    }
+}
+@media(max-width:790px){
+    .mainss{
+        width: 645px;
+    }
+}
+@media(max-width:660px){
+    .mainss{
+       justify-content: center;
+       width: 576px;
+    }
+    .reg-txt{
+        font-size: 30px;
+    }
+}
+@media(max-width:588px){
+    .mainss{
+       justify-content: center;
+       width: 548px;
+    }
+    .reg-txt{
+        font-size: 26px;
+    }
+}
+@media(max-width:572px){
+    .mainss{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainss{
+        height: 861px;
+        width: 400px;
+    }
+    .imgs-div{
+        margin: 0;
+    }
+}
+
+@media(max-width:416px){
+    .mainss{
+        width: 323px;
+        height: 815px;
+    }
+    .reg-txt{
+        margin: 0;
+    }
+    .fa{
+        font-size: 24px;
+    }
+}
